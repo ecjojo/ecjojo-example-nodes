@@ -11,5 +11,13 @@ By diving into this example and making it your own,
 you'll gain valuable hands-on experience in creating custom nodes in ComfyUI. 
 Enjoy the process of learning and have fun with your custom node development journey!
 
+# example nodes list
+- ```EmptyNode```: empty custom node frame
+- ```InputNode```: Basic Type Input & Output
+- ```HelloWorldNode```: Output "HelloWorld!" String
+- ```DateFormatNode```: Create List Selector example
+- ```RandomSizeNode```: Random Number
+- ```DisplayTextNode```: Display Text
+
 ## Credits
 DisplayText Node is refer from AlekPet & Gemini API Node, thanks to AlekPet & Zho-Zho-Zho！
