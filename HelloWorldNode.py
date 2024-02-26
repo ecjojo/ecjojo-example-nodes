@@ -16,4 +16,5 @@ class HelloWorldNode:
  
     def output_HelloWorld(self):
         HelloWorldText="Hello World!"
+        print (HelloWorldText)
         return (HelloWorldText,)
