@@ -4,7 +4,7 @@ class DisplayTextNode:
   def INPUT_TYPES(s): 
     return {
       "required": {        
-        "text": ("STRING", {"forceInput": True}),     
+        "text": ("STRING", {"multiline": True}),     
         },
       "hidden": {"prompt": "PROMPT", "extra_pnginfo": "EXTRA_PNGINFO"},
       }
