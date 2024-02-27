@@ -1,7 +1,7 @@
-class InputNode:
+class ExampleNode:
     
     @classmethod
-    def INPUT_TYPES(s):
+    def INPUT_TYPES(cls):
         return {
             "required": {
                 "image": ("IMAGE",),
@@ -42,9 +42,9 @@ class InputNode:
     RETURN_NAMES = ("IMAGE","INT","INT_SLIDER","FLOAT","FLOAT_ROUND","STRING","STRING_MULTILINE",)
     OUTPUT_NODE = True
  
-    FUNCTION = "emtpy"
+    FUNCTION = "example"
     CATEGORY = "ecjojo_example"
  
-    def emtpy(self,image, int,int_slider,float,float_round,string,string_multiline_field):
+    def example(self,image, int,int_slider,float,float_round,string,string_multiline_field):
         return (image, int,int_slider,float,float_round,string,string_multiline_field)
 

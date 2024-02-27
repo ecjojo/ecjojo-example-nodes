@@ -4,7 +4,7 @@ Title: ComfyUI Custom Nodes Example
 File: __init__.py
 Copyright (c) 2024 ecjojo
 """
-__VERSION__ = "0.3.0"
+__VERSION__ = "0.4.0"
 
 import os, sys, filecmp, shutil, __main__
 python = sys.executable
@@ -35,28 +35,31 @@ if result.left_only or result.diff_files:
 
 #INPORT NODES
 from .EmptyNode import EmptyNode
-from .InputNode import InputNode
+from .ExampleNode import ExampleNode
 from .HelloWorldNode import HelloWorldNode
 from .DateFormatNode import DateFormatNode
 from .RandomSizeNode import RandomSizeNode
+from .StringNode import StringNode
 from .DisplayTextNode import DisplayTextNode
 
 # ------- MAPPING ------- #
 NODE_CLASS_MAPPINGS = { 
     "EmptyNode_Example": EmptyNode,
-    "InputNode_Example": InputNode,
+    "ExampleNode_Example": ExampleNode,
     "HelloWorldNode_Example": HelloWorldNode,
     "DateFormatNode_Example": DateFormatNode,
     "RandomSizeNode_Example": RandomSizeNode,
+    "StringNode_Example": StringNode,
     "DisplayTextNode_Example": DisplayTextNode,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = { 
     "EmptyNode_Example": "A Empty Node (ecjojo)",
-    "InputNode_Example": "A Input Node (ecjojo)",
+    "ExampleNode_Example": "Type Example Node (ecjojo)",
     "HelloWorldNode_Example": "Hello World Node (ecjojo)",
     "DateFormatNode_Example": "Date Format Node (ecjojo)",
     "RandomSizeNode_Example": "Random Size Node (ecjojo)",
+    "StringNode_Example": "String Node (ecjojo)",
     "DisplayTextNode_Example": "Display Text Node (ecjojo)",
 }
 

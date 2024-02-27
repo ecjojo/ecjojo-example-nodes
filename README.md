@@ -13,7 +13,8 @@ Enjoy the process of learning and have fun with your custom node development jou
 
 # example nodes list
 - ```EmptyNode```: empty custom node frame
-- ```InputNode```: Basic Type Input & Output
+- ```ExampleNode```: Basic Type Input & Output
+- ```StringNode``` : InputA + InputB InputC
 - ```HelloWorldNode```: Output "HelloWorld!" String
 - ```DateFormatNode```: Create List Selector example
 - ```RandomSizeNode```: Random Number

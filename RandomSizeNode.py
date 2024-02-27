@@ -4,7 +4,7 @@ import numpy as np
 class RandomSizeNode:
 
     @classmethod
-    def INPUT_TYPES(s): 
+    def INPUT_TYPES(cls): 
         return {
             "required": {
                 "min_width": ("INT", {"default": 512}),
