@@ -11,15 +11,18 @@ By diving into this example and making it your own,
 you'll gain valuable hands-on experience in creating custom nodes in ComfyUI. 
 Enjoy the process of learning and have fun with your custom node development journey!
 
+<img width="1246" alt="image" src="https://github.com/ecjojo/ecjojo-example-nodes/assets/48451938/e6064b0a-6ef7-4880-9a37-624949d323a5">
+
 # example nodes list
 - ```EmptyNode```: empty custom node frame
 - ```ExampleNode```: Basic Type Input & Output
 - ```StringNode``` : InputA + InputB InputC
 - ```HelloWorldNode```: Output "HelloWorld!" String
-- ```InputNode```: Basic Type Input & Output
 - ```DateFormatNode```: Create List Selector example
 - ```RandomSizeNode```: Random Number
 - ```DisplayTextNode```: Display Text
+
+
 
 ## Credits
 DisplayText Node is refer from AlekPet & Gemini API Node, thanks to AlekPet & Zho-Zho-Zho！
