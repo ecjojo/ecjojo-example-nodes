@@ -16,6 +16,7 @@ Enjoy the process of learning and have fun with your custom node development jou
 - ```ExampleNode```: Basic Type Input & Output
 - ```StringNode``` : InputA + InputB InputC
 - ```HelloWorldNode```: Output "HelloWorld!" String
+- ```InputNode```: Basic Type Input & Output
 - ```DateFormatNode```: Create List Selector example
 - ```RandomSizeNode```: Random Number
 - ```DisplayTextNode```: Display Text
