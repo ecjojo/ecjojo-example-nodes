@@ -4,15 +4,15 @@ class StringNode:
   def INPUT_TYPES(cls): 
     return {
       "required": {        
-        "textA": ("STRING", {"multiline": True}),     
-        "textB": ("STRING", {"multiline": True}),   
-        "textC": ("STRING", {"multiline": True}),   
+        "textA": ("STRING", {"multiline": True,"default": ""}),     
+        "textB": ("STRING", {"multiline": True,"default": ""}),   
+        "textC": ("STRING", {"multiline": True,"default": ""}),   
         },
 
       }
 
   RETURN_TYPES = ('STRING',)
-  RETURN_NAMES = ('text',)
+  RETURN_NAMES = ('combin_text',)
   OUTPUT_NODE = True
   
   FUNCTION = "output"
@@ -20,5 +20,4 @@ class StringNode:
 
   def output(self, textA,textB,textC):
       text = textA +","+ textB +","+ textC
-      return {"text": text}
-
+      return {text}

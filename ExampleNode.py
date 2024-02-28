@@ -5,6 +5,7 @@ class ExampleNode:
         return {
             "required": {
                 "image": ("IMAGE",),
+                
                 "int": ("INT", {
                     "default": 0,
                     "display": "number" }),
