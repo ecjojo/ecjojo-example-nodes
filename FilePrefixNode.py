@@ -1,12 +1,12 @@
 class FilePrefixNode:
   
     @classmethod
-    def INPUT_TYPES(cls): 
+    def INPUT_TYPES(s): 
         return {
             "required": {
                 "CustomFolderBool":("BOOLEAN",{"default":False}),
                 "CustomFolderName":("STRING",{"default":"CustomName"}),
-                "FolderName": (["%date:yyyy-MM-dd%", 
+                "FolderFormat": (["%date:yyyy-MM-dd%", 
                             "%date:dd-MM-yyyy%",  
                             "%date:dd/MM/yyyy%",
                             ],),
@@ -21,28 +21,28 @@ class FilePrefixNode:
     FUNCTION = "PrefixFormat"
     CATEGORY = "ecjojo_example"
 
-    def PrefixFormat(self, Format,ImageName,CustomFolderBool,CustomFolderName):
+    def PrefixFormat(self, FolderFormat,ImageName,CustomFolderBool,CustomFolderName):
         if CustomFolderBool ==True:
             custom_output = CustomFolderName+"/"+ImageName,
             return (custom_output,)
             
         else:
-            if Format == "%date:yyyy-MM-dd%":
+            if FolderFormat == "%date:yyyy-MM-dd%":
                 output = "%date:yyyy-MM-dd%/"+ImageName,
                 
-            elif Format == "%date:dd-MM-yyyy%":
+            elif FolderFormat == "%date:dd-MM-yyyy%":
                 output = "%date:dd-MM-yyyy%/"+ImageName,
                 
-            elif Format == "%date:dd/MM/yyyy%":
+            elif FolderFormat == "%date:dd/MM/yyyy%":
                 output = "%date:dd/MM/yyyy%/"+ImageName,
                 
-            elif Format == "%date:yyyy-MM-dd hh:mm:ss%":
+            elif FolderFormat == "%date:yyyy-MM-dd hh:mm:ss%":
                 output = "%date:yyyy-MM-dd hh:mm:ss%/"+ImageName,
                 
-            elif Format == "%date:yyyyMMddhhmmss%": 
+            elif FolderFormat == "%date:yyyyMMddhhmmss%": 
                 output = "%date:yyyyMMddhhmmss%/"+ImageName,
             
-            return (output,)
+            return output,
     
 #data_string="%NodeName.node_value%"
 #"%Empty Latent Image.width%x%Empty Latent Image.height%",

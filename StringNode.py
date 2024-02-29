@@ -1,7 +1,7 @@
 class StringNode:
   
   @classmethod
-  def INPUT_TYPES(cls): 
+  def INPUT_TYPES(s): 
     return {
       "required": {        
         "textA": ("STRING", {"multiline": True,"default": ""}),     
@@ -19,5 +19,5 @@ class StringNode:
   CATEGORY = "ecjojo_example"
 
   def output(self, textA,textB,textC):
-      text = textA +","+ textB +","+ textC
-      return {text}
+      ouput_text = textA +","+ textB +","+ textC
+      return ouput_text,

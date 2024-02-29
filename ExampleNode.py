@@ -1,11 +1,10 @@
 class ExampleNode:
     
     @classmethod
-    def INPUT_TYPES(cls):
+    def INPUT_TYPES(s):
         return {
             "required": {
-                "image": ("IMAGE",),
-                
+
                 "int": ("INT", {
                     "default": 0,
                     "display": "number" }),
@@ -39,13 +38,15 @@ class ExampleNode:
             },
         }
  
-    RETURN_TYPES = ("IMAGE","INT","INT","FLOAT","FLOAT","STRING","STRING",)
-    RETURN_NAMES = ("IMAGE","INT","INT_SLIDER","FLOAT","FLOAT_ROUND","STRING","STRING_MULTILINE",)
+    RETURN_TYPES = ("INT","INT","FLOAT","FLOAT","STRING","STRING",)
+    RETURN_NAMES = ("INT","INT_SLIDER","FLOAT","FLOAT_ROUND","STRING","STRING_MULTILINE",)
     OUTPUT_NODE = True
  
     FUNCTION = "example"
     CATEGORY = "ecjojo_example"
  
-    def example(self,image, int,int_slider,float,float_round,string,string_multiline_field):
-        return (image, int,int_slider,float,float_round,string,string_multiline_field)
+    def example(self,int,int_slider,float,float_round,string,string_multiline_field):
+        
+               
+        return (int,int_slider,float,float_round,string,string_multiline_field)
 

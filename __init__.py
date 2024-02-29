@@ -35,13 +35,14 @@ if result.left_only or result.diff_files:
 
 #INPORT NODES
 from .EmptyNode import EmptyNode
-from .ExampleNode import ExampleNode
 from .HelloWorldNode import HelloWorldNode
+from .ExampleNode import ExampleNode
 from .FilePrefixNode import FilePrefixNode
 from .RandomSizeNode import RandomSizeNode
 from .StringNode import StringNode
 from .DisplayTextNode import DisplayTextNode
 from .BiggerNote import BiggerNote
+#from .TextOverlayNode import TextOverlayNode
 
 # ------- MAPPING ------- #
 NODE_CLASS_MAPPINGS = { 
@@ -53,17 +54,19 @@ NODE_CLASS_MAPPINGS = {
     "StringNode_Example": StringNode,
     "DisplayTextNode_Example": DisplayTextNode,
     "BiggerNote_Example": BiggerNote,
+    #"TextOverlayNode_Example": TextOverlayNode,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = { 
     "EmptyNode_Example": "A Empty Node (ecjojo)",
-    "ExampleNode_Example": "Type Example Node (ecjojo)",
+    "ExampleNode_Example": "Example Node (ecjojo)",
     "HelloWorldNode_Example": "Hello World Node (ecjojo)",
     "FilePrefixNode_Example": "Filename Prefix Node (ecjojo)",
     "RandomSizeNode_Example": "Random Size Node (ecjojo)",
     "StringNode_Example": "String Node (ecjojo)",
     "DisplayTextNode_Example": "Display Text Node (ecjojo)",
     "BiggerNote_Example": "Bigger Note (ecjojo)",
+    #"TextOverlay_Example": "Text Overlay Node (ecjojo)",
 }
 
 __all__ = ['NODE_CLASS_MAPPINGS', 'NODE_DISPLAY_NAME_MAPPINGS']

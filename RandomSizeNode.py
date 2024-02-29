@@ -4,13 +4,14 @@ import numpy as np
 class RandomSizeNode:
 
     @classmethod
-    def INPUT_TYPES(cls): 
+    def INPUT_TYPES(s): 
         return {
             "required": {
                 "min_width": ("INT", {"default": 512}),
                 "max_width": ("INT", {"default": 1024}),
                 "min_height": ("INT", {"default": 512}),
                 "max_height": ("INT", {"default": 1024}),
+                "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff}),
             },
         }
 
@@ -20,7 +21,9 @@ class RandomSizeNode:
 
     CATEGORY = "ecjojo_example"
 
-    def random_value(self, min_width, max_width,min_height,max_height):
+    def random_value(self, min_width, max_width,min_height,max_height, seed):
+        
+        np.random.seed(seed)
         
         width = np.random.randint(min_width, max_width)
         height = np.random.randint(min_height, max_height)

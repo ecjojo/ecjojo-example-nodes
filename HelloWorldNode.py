@@ -1,7 +1,7 @@
 class HelloWorldNode:
     
     @classmethod
-    def INPUT_TYPES(cls):
+    def INPUT_TYPES(s):
         return {
             "required": {
             },
@@ -16,5 +16,4 @@ class HelloWorldNode:
  
     def output_HelloWorld(self):
         HelloWorldText="Hello World!"
-        print (HelloWorldText)
-        return (HelloWorldText,)
+        return HelloWorldText,

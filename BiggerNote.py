@@ -1,7 +1,7 @@
 class BiggerNote:
   
   @classmethod
-  def INPUT_TYPES(cls): 
+  def INPUT_TYPES(s): 
     return {
       "required": {
           },
