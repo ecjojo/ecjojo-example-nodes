@@ -6,12 +6,13 @@ class BiggerNote:
       "required": {
           },
       }
-
-  RETURN_TYPES = ()
-  RETURN_NAMES = ()
-  
-  FUNCTION = "output"
-  CATEGORY = "ecjojo_example"
+    
+    FUNCTION = "output"
 
   def output():
       return {}
+    
+  RETURN_TYPES = ()
+  RETURN_NAMES = ()
+
+  CATEGORY = "ecjojo_example"

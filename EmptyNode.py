@@ -6,12 +6,13 @@ class EmptyNode:
             "required": {
             },
         }
+
+    FUNCTION = "output"
  
+    def output(self):
+        return ()
+    
     RETURN_TYPES = ()
     RETURN_NAMES = ()
- 
-    FUNCTION = "empty"
+    
     CATEGORY = "ecjojo_example"
- 
-    def empty(self):
-        return ()

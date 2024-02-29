@@ -15,11 +15,7 @@ class RandomSizeNode:
             },
         }
 
-    RETURN_TYPES = ("INT", "INT")
-    RETURN_NAMES = ("width", "height")
     FUNCTION = "random_value"
-
-    CATEGORY = "ecjojo_example"
 
     def random_value(self, min_width, max_width,min_height,max_height, seed):
         
@@ -30,3 +26,9 @@ class RandomSizeNode:
 
         return (width, height,)
 
+
+    RETURN_TYPES = ("INT", "INT")
+    RETURN_NAMES = ("width", "height")
+    OUTPUT_NODE = True
+    
+    CATEGORY = "ecjojo_example"

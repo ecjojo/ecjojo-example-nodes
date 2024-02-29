@@ -34,7 +34,6 @@ class TextOverlayNode:
     
     CATEGORY = "ecjojo_example"
     
-    
     def overlay_text(self, image, text, font, font_size, font_color):
         # Load the image
         img = Image.open(image)

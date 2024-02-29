@@ -4,7 +4,7 @@ Title: ComfyUI Custom Nodes Example
 File: __init__.py
 Copyright (c) 2024 ecjojo
 """
-__VERSION__ = "0.5.0"
+__VERSION__ = "0.6.0"
 
 import os, sys, filecmp, shutil, __main__
 python = sys.executable

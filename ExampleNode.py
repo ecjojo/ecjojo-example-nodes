@@ -16,7 +16,7 @@ class ExampleNode:
                     "step": 64,
                     "display": "slider" }),
                 
-                "floa": ("FLOAT", {
+                "float": ("FLOAT", {
                     "default": 1.0,
                     "round": False, 
                     "display": "number"}),
@@ -32,21 +32,21 @@ class ExampleNode:
                 "string": ("STRING", {
                     "default": "Hello World!"}),
                 
-                "string_multiline_field": ("STRING", {
+                "string_multiline": ("STRING", {
                     "multiline": True, 
                     "default": "Hello World!"}),
             },
         }
+
+    FUNCTION = "output"
  
+    def output(self,int,int_slider,float,float_round,string,string_multiline):
+        
+        return (int,int_slider,float,float_round,string,string_multiline)
+
+
     RETURN_TYPES = ("INT","INT","FLOAT","FLOAT","STRING","STRING",)
     RETURN_NAMES = ("INT","INT_SLIDER","FLOAT","FLOAT_ROUND","STRING","STRING_MULTILINE",)
     OUTPUT_NODE = True
- 
-    FUNCTION = "example"
+    
     CATEGORY = "ecjojo_example"
- 
-    def example(self,int,int_slider,float,float_round,string,string_multiline_field):
-        
-               
-        return (int,int_slider,float,float_round,string,string_multiline_field)
-
